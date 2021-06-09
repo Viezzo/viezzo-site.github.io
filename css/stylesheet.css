@@ -78,7 +78,6 @@ select {
 
 .drinkPictureFloat {
   cursor: pointer;
-  max-width: 400px;
   width: 100%;
 }
 
@@ -130,6 +129,8 @@ select {
   padding: 0 auto;
   position: relative;
   text-align: center;
+  overflow: hidden;
+
 }
 
 .textOverlay {
