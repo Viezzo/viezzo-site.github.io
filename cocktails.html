@@ -35,9 +35,23 @@
 
         
         <div id="titleGroup">
-            <div id="menuTitle">Dulce Como Piña</div>
+            <div id="menuTitle">
+                Dulce Como Piña
+                <span id='spotifyButton'><i class="fab fa-spotify"></i></iframe></span>
+                
+            </div>
             <div id="menuBlurb">Like Rihanna's forehead, bitch, you gotta think big - Junglepu$$y</div>    
         </div>
+
+        <div id='spotifyPlaylist'>
+            <iframe 
+                src="https://open.spotify.com/embed/playlist/11FMt3OBH9rvIrXrPSpM1Z"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media">
+            </iframe>
+        </div>
+
 
         <span>
             View
@@ -68,6 +82,41 @@
         
         <div id="classicMenu"></div>
         <div id="cardsMenu"></div>
+
+        <div id='popup-background'></div>
+
+        <div id='popup'>
+            
+            <span id='popupText'>
+                <div id="popup-close" >
+                    <i class="fas fa-times"></i>
+                </div>
+                <div id="popupDescription">
+                    <div class='popup-header'>Adrian</div>
+                    <div id="aReview"></div>
+
+                    <hr size="0.5" width="25%">
+
+                    <div class='popup-header'>Lupe</div>
+                    <div id="lReview"></div>
+
+                    <div class='popup-header'>Ratings</div>
+                    <div class="popupRating">
+                        <span class='rating'> sour <span id='popupSour'></span></span>
+                        <span class='rating'> sweet <span id='popupSweet'></span></span>
+                        <span class='rating'> bitter <span id='popupBitter'></span></span>
+                        <span class='rating'> strong <span id='popupStrong'></span></span>
+                    </div>
+
+                    <div class='popup-header'>Source</div>
+                    <div id='popupSource'></div>
+                </div>
+            </span>
+
+            <span id='popupImageContainer'></span>
+
+
+        </div>
 
 	</body>
 </html>

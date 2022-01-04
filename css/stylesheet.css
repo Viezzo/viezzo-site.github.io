@@ -1,3 +1,7 @@
+#bobby_percent1,#bobby_percent2,#bobby_percent3,#bobby_percent4{
+  max-width: 50px;
+}
+
 body {
   background-color: white;
   color: #292929;
@@ -7,8 +11,6 @@ body {
   margin:0px; 
   width: 100%; 
   height: 100%; 
-  /* height: 100%;
-  margin: 0; */
 }
 
 
@@ -20,25 +22,12 @@ select {
   margin-right: 6px;
 }
 
-/* #foreground {
-  background: #ffffff;
-  position: relative;
-  margin-top: 100px;
-  height: 1000px;
-} */
-
 #background {
-  /* background-image: url("../images/Adrian_Profile_pic.jpg"); */
   position: absolute;
-  /* top: 0; */
   left: 0;
   z-index: -1;
   width: 100%;
   opacity: 0.8;
-  /* height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }  
 
 #titleGroup {
@@ -65,9 +54,92 @@ select {
   cursor: pointer;
 }
 
+#popup-background {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  opacity: 0.95;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+}
+
+#popupImageContainer {
+  float: right;
+  height: 100vh;
+  width: 50vw;
+  max-width: 600px;
+  min-width: 400px;
+  overflow: hidden;
+  /* margin-left: -10vw;
+  margin-top: -10vh; */
+}
+
+#popupDrinkPicture{
+  float: right;
+  height: 100%;
+  margin-right: -10vw;
+}
+
+#popupText {
+  display: inline-block;
+  max-width: 800px;
+}
+
+#popup {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+#popup-close {
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  font-size: 50px;
+  position: fixed;
+  z-index: 3;
+}
+
+/* #popupDescription {
+  max-width: 70%;
+  text-align: center;
+} */
+
+.popup-header {
+  font-style: oblique;
+  padding-top: 8px;
+}
+
+.rating {
+  padding: 0 2px 0 2px;
+}
+
 #rowsSelect{
   color: #c8c8c8;
   cursor: pointer;
+}
+
+
+#spotifyButton {
+  cursor: pointer;
+}
+#spotifyPlaylist {
+  display: none;
+}
+
+iframe {
+  height: 100px;
+  width: 600px;
+}
+@media screen and (max-width: 600px) {
+  iframe {
+      width: 75% !important;
+      height: 100px !important;
+  }
 }
 
 .drinkCardFloat {

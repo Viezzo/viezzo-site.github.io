@@ -16,6 +16,7 @@
 		<link href="./css/stylesheet.css" rel="stylesheet" type="text/css" />
 		<!-- My JavaScript functions -->
 		<script src="./lib/index.js"></script>
+		<script src="./lib/bobby.js"></script>
 		<!-- Font Awesome, for graphics icons -->
 		<script src="./lib/fontawesome.js"></script>
 		<script src="./lib/require.js"></script>
@@ -23,44 +24,30 @@
 	</head>
 	
 	<body>
-		<hr size="0.5" color="black">
-		<div id="controls">
-			<span>
-				<div class="floater">Order by:</div>
-				<select id="order">
-					<option>Key</option>
-					<option>BPM</option>
-					<option>Artist</option>
-					<option>Title</option>
-				</select>
-			</span>
-			<span>
-				<div class="floater">Key:</div>
-				<select id="key">
-					<option>C</option>
-					<option>C#</option>
-					<option>D</option>
-					<option>D#</option>
-					<option>E</option>
-					<option>F</option>
-					<option>F#</option>
-					<option>G</option>
-					<option>G#</option>
-					<option>A</option>
-					<option>A#</option>
-					<option>B</option>
-				</select>
-				<select id="mode">
-					<option>major</option>
-					<option>minor</option>
-				</select>
-			</span>
-			<span>
-				<div class="floater">Relatives</div>
-				<div class="floater"><input id="relatives" type="checkbox" name="Relative" value="Relative" checked></div>
-			</span>
+
+		<div id='guesses'>
+			<div id="header">Guess Bobby's breeds!</div>
+			<br>
+			<div>Your name: <input type="text"></div>
+			<br>
+
+			<div>
+				<div><input id='bobby_percent1' type="number" value=0>% <input type="text"></div>
+				<div><input id='bobby_percent2' type="number" value=0>% <input type="text"></div>
+				<div><input id='bobby_percent3' type="number" value=0>% <input type="text"></div>
+				<div><input id='bobby_percent4' type="number" value=0>% <input type="text"></div>
+			</div>
+
+			<div>
+				<span id='totalPercent'></span>
+				<span>% total</span>
+			</div>
+
+			<div>
+				<button type="button" onclick="alert('Hello world!')">Submit</button>
+			</div>
 		</div>
-		<table id="mainTable"></table>
+		
 
 	</body>
 </html>
