@@ -83,6 +83,7 @@ select {
 }
 
 #popupText {
+  font-family: Helvetica, sans-serif;
   display: inline-block;
   max-width: 800px;
 }
