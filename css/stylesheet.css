@@ -2,12 +2,16 @@
   max-width: 50px;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 body {
   background-color: white;
-  color: #292929;
+  color: #787878;
   text-align: center;
   font-size: 18px;
-  font-family: 'Myriad Pro';
+  font-family: "Lato";
   margin:0px; 
   width: 100%; 
   height: 100%; 
@@ -40,7 +44,7 @@ select {
 
 #menuTitle {
   color: rgb(210, 178, 0);
-  font-size: 45px;
+  font-size: 50px;
   font-style: bold;
   text-shadow: 2px 2px #8e8e8e;
   margin-bottom: -8px;
@@ -129,14 +133,14 @@ select {
 }
 
 
-#spotifyButton {
+/* #spotifyButton {
   cursor: pointer;
 }
 #spotifyPlaylist {
   display: none;
-}
+} */
 
-iframe {
+/* iframe {
   height: 100px;
   width: 600px;
 }
@@ -145,11 +149,25 @@ iframe {
       width: 75% !important;
       height: 100px !important;
   }
+} */
+
+
+
+#cocktailMenuOptions{
+  font-size: 21px;
 }
-
-
-.animation-video {
-  width: 30%;
+select{
+  color: #4a4a4a; 
+  font-size: 17px;
+  border-radius: 6px;
+}
+@media screen and (max-width: 800px) {
+  #cocktailMenuOptions {
+    font-size: 23px;
+  }
+  select {
+    font-size: 20;
+  }
 }
 
 .drinkCardFloat {
@@ -193,12 +211,47 @@ iframe {
   font-style: italic;
 }
 
+
+#menuBar {
+  background-color: white;
+  padding-top: 5px;
+  /* position: fixed; */
+}
+
+
+.animation-video {
+  display: inline-block;
+  max-width: 30%;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+#animation-frosty-trophies{
+  width: 100%;
+}
+
+
 .header {
   font-size: 30px;
 }
 
 .section {
-  padding: 20px;
+  padding: 20px; 
+}
+
+.hyperlink{
+  text-decoration: none;
+}
+.hyperlink:hover{
+  color: #000000;
+}
+
+.menuLink{
+  padding: 6vw;
+  text-decoration: none;
+}
+.menuLink:hover, .hyperlink:hover{
+  color: #000000;
 }
 
 .pictureContainer {
@@ -233,5 +286,13 @@ iframe {
 }
 
 .wide-img {
-  width: 35%;
+  width: 45%;
+}
+
+
+.wide-img-container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
