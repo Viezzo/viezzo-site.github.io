@@ -220,6 +220,7 @@ select{
 
 
 .animation-video {
+  cursor: pointer;
   display: inline-block;
   max-width: 30%;
   padding: 0 auto;
@@ -227,9 +228,31 @@ select{
 }
 
 #animation-frosty-trophies{
+  cursor: pointer;
   width: 100%;
 }
+#animation-car-rotate{
+  width: 75%;
+}
 
+#overlay{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+#hiq-overlay{
+  max-height: 90vh;
+  max-width: 90vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
 
 .header {
   font-size: 30px;
@@ -237,6 +260,9 @@ select{
 
 .section {
   padding: 20px; 
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hyperlink{
