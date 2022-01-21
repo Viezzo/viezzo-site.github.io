@@ -35,7 +35,7 @@ select {
 }  
 
 #cocktailPage {
-  font-family: 'Alegreya SC'
+  font-family: 'Alegreya SC';
 }
 
 #titleGroup {
@@ -157,6 +157,7 @@ select {
   font-size: 21px;
 }
 select{
+  cursor: pointer;
   color: #4a4a4a; 
   font-size: 17px;
   border-radius: 6px;
@@ -191,17 +192,18 @@ select{
 }
 
 .drinkName {
-  font-size: 30px;
+  font-size: 32px;
   font-style: bold;
 }
 
 .drinkIngredientsList {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 100;
 }
 
 .drinkIngredientsBullets {
   display: inline-block; 
-  font-size: 20px;
+  font-size: 22px;
   margin: -5px;
 	text-align: left;   
 }
