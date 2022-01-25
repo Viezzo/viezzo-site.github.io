@@ -21,18 +21,16 @@
 	<body>
 		
 		<div id='menuBar'>
-			<div>
-				<a href='#' class='menuLink'>HOME</a> 
-				<a href='./cocktails.html' class='menuLink'>COCKTAILS</a>
-				<a href='#' class='menuLink'>ABOUT</a>
-				test6
-			</div>
-			
+			<a href='#' class='menuLink'>HOME</a> 
+			<a href='./cocktails.html' class='menuLink'>COCKTAILS</a>
+			<a href='#' class='menuLink'>ABOUT</a>
+			<a href='./graphics.html' class='menuLink'>GRAPHICS</a>
 		</div>
+		<br>
+
 
 		<div id='mainSection' class='section'>
 
-			<iframe src="./videos/lowq/raissa-1.mp4" frameborder="0"></iframe>
 			<div>	
 				<video class='animation-video' autoplay loop muted playsinline>
 					<!-- <source src="./videos/lowq/raissa-1.webm" type="video/webm" /> -->
@@ -65,7 +63,7 @@
 				<source src="./videos/lowq/alien_3.mp4" type="video/mp4" />
 			</video>
 			
-			<video style="width: 90.8%;" autoplay loop muted playsinline>
+			<video class='animation-wide' style="width: 90.8%;" autoplay loop muted playsinline>
 				<source src="./videos/lowq/sos-wide.webm" type="video/webm" />
 				<source src="./videos/lowq/sos-wide.mp4" type="video/mp4" />
 			</video>
@@ -106,6 +104,10 @@
 				<source src="./videos/lowq/moon3.webm" type="video/webm" />
 				<source src="./videos/lowq/moon3.mp4" type="video/mp4" />
 			</video>
+			<video class='animation-video' autoplay loop muted playsinline>
+				<source src="./videos/lowq/beets-noodz-logo.webm" type="video/webm" />
+				<source src="./videos/lowq/beets-noodz-logo.mp4" type="video/mp4" />
+			</video>
 			
 			<!-- 
 			<video class='animation-video' autoplay loop muted playsinline>
@@ -122,17 +124,18 @@
 			</video> -->
 
 
-			<video id='animation-frosty-trophies' autoplay loop muted playsinline>
+			<video id='animation-frosty-trophies' class='animation-wide' autoplay loop muted playsinline>
 				<source src="./videos/lowq/frosty-and-trophies.webm" type="video/webm" />
 				<source src="./videos/lowq/frosty-and-trophies.mp4" type="video/mp4" />
 			</video>
-			<video id='animation-car-rotate' autoplay loop muted playsinline>
-				<source src="./videos/lowq/car-rotate-preview.webm" type="video/webm" />
-				<source src="./videos/lowq/car-rotate-preview.mp4" type="video/mp4" />
+			<video id='animation-car-rotate' class='animation-wide' autoplay loop muted playsinline>
+				<source src="./videos/lowq/car-rotate.webm" type="video/webm" />
+				<source src="./videos/lowq/car-rotate.mp4" type="video/mp4" />
 			</video>
 		</div>
 
 		<div class='section'>
+			
 			<div>
 				<a class='hyperlink' href="https://www.thisfar.co/home/2020/10/30/faces">
 					Check out <i>Faces</i> on <i>This Far.</i> 
@@ -140,11 +143,41 @@
 			</div>
 
 			<div class='wide-img-container'>
-				<img class='wide-img' src="./images/faces_adriantraviezo_1.jpg">
-				<img class='wide-img' src="./images/faces_adriantraviezo_2.jpg">
+				<!-- <img class='video-thumbnail' src="./images/faces_adriantraviezo_1.jpg"> -->
+				
+				<div class='vimeoWrapper'>
+					<iframe src="https://player.vimeo.com/video/472845657?h=abac38f532&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+						frameborder="0" 
+						allow="autoplay; fullscreen; picture-in-picture" 
+						allowfullscreen 
+						title="faces">
+					</iframe>
+				</div>
+
+				<!-- <div id='faces' class='video-thumbnail' style="padding:65% 0 0 0;position:relative;">
+					<iframe src="https://player.vimeo.com/video/472845657?h=abac38f532&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+						frameborder="0" 
+						allow="autoplay; fullscreen; picture-in-picture" 
+						allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+						title="faces">
+					</iframe>
+				</div>
+				<script src="https://player.vimeo.com/api/player.js"></script> -->
+
+
+				<!-- <img class='wide-img' src="./images/faces_adriantraviezo_1.jpg"> -->
+				<!-- <img class='wide-img' src="./images/faces_adriantraviezo_2.jpg">
 				<img class='wide-img' src="./images/faces_adriantraviezo_3.jpg">
-				<img class='wide-img' src="./images/faces_adriantraviezo_5.jpg">
+				<img class='wide-img' src="./images/faces_adriantraviezo_5.jpg"> -->
 			</div>
+		</div>
+
+		<div class='section'>
+            <img class='album-cover' src="./images/graphics/focus_cover.png" alt="">
+            <img class='album-cover' src="./images/graphics/cloudboy.png" alt="">
+			<img class='album-cover' src="./images/graphics/pretty-nasty.png" alt="">
+            <img class='album-cover' src="./images/graphics/antibitrot-cover.jpeg" alt="">
+
 		</div>
 		
 			<!-- <div class='section'>

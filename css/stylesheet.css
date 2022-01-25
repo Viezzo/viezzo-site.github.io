@@ -162,14 +162,6 @@ select{
   font-size: 17px;
   border-radius: 6px;
 }
-@media screen and (max-width: 800px) {
-  #cocktailMenuOptions {
-    font-size: 23px;
-  }
-  select {
-    font-size: 20;
-  }
-}
 
 .drinkCardFloat {
   display: inline-block;
@@ -213,6 +205,45 @@ select{
   font-style: italic;
 }
 
+@media screen and (max-width: 850px) {
+  #cocktailMenuOptions {
+    font-size: 27px;
+  }
+  select {
+    font-size: 22px;
+  }
+
+  .drinkCardFloat {
+    padding: 3px;
+    max-width: 100%;
+  }
+  .drinkPictureRows {
+    max-width: 100%;
+  }
+  .drinkPictureFloat{
+    max-width: 100%;
+  }
+
+  .drinkName{
+    font-size: 35px;
+  }
+  .drinkIngredientsList {
+    font-size: 25px;
+  }
+  .drinkIngredientsBullets {
+    font-size: 25px;
+  }
+  .drinkCost{
+    font-size: 23px;
+  }
+
+  #menuTitle{
+    font-size: 58px;
+  }
+}
+
+
+
 
 #menuBar {
   background-color: white;
@@ -231,7 +262,6 @@ select{
 }
 
 #animation-frosty-trophies{
-  cursor: pointer;
   width: 100%;
 }
 #animation-car-rotate{
@@ -256,6 +286,48 @@ select{
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
+
+#viezzo-logo{
+  width: 70px;
+}
+
+.animation-wide {
+  cursor: pointer;
+}
+
+.album-cover{
+  display: inline-block;
+  padding: 0 20px;
+  width: 40%;
+  max-width: 200px;
+}
+
+.drawing{
+  max-width: 31.5%;
+  display: inline-block;
+}
+.drawing-wide{
+  max-width: 48%;
+  display: inline-block;
+}
+@media screen and (max-width: 900px) {
+  .drawing{
+    max-width: 48%;
+  }
+  .animation-video{
+    max-width: 45%;
+  }
+  .drawing-wide{
+    max-width: 98%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .drawing{
+    max-width: 98%;
+  }
+}
+
+
 
 .header {
   font-size: 30px;
@@ -312,11 +384,24 @@ select{
 .video_cell {
   width: 560px; 
   height: 315px;
-}
+}a
+
 
 .wide-img {
   width: 45%;
 }
+.video-thumbnail {
+  cursor: pointer;
+  width: 92%;
+  max-width: 1080px;
+}
+
+#faces {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 
 .wide-img-container{
@@ -324,4 +409,24 @@ select{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+
+.vimeoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  text-align: center;
+  /* margin-left: 3.5vw; */
+  /* padding-top: 25px; */
+  /* height: 0; */
+}
+.vimeoWrapper iframe {
+  position: absolute;
+  /* top: -50px; */
+  left: 0;
+  width: 96%;
+  max-width: 1080px;
+  height: 100%;
+  margin: 0; 
+  padding: 0;
 }
