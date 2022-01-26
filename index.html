@@ -17,10 +17,14 @@
 		<!-- Font Awesome, for graphics icons -->
 		<script src="./lib/fontawesome.js"></script>
 
+		<!-- Fonts from Google -->
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open+Sans'>
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat'>
+
 	</head>
 	<body>
 		
-		<div id='menuBar'>
+		<div class='menuBar'>
 			<a href='#' class='menuLink'>HOME</a> 
 			<a href='./cocktails.html' class='menuLink'>COCKTAILS</a>
 			<a href='#' class='menuLink'>ABOUT</a>
@@ -33,13 +37,13 @@
 
 			<div>	
 				<video class='animation-video' autoplay loop muted playsinline>
-					<!-- <source src="./videos/lowq/raissa-1.webm" type="video/webm" /> -->
+					<source src="./videos/lowq/raissa-1.webm" type="video/webm" />
 					<source src="./videos/lowq/raissa-1.mp4" type="video/mp4" />
 				</video>
 			</div>
 
 			<video class='animation-video' autoplay loop muted playsinline>
-				<!-- <source src="./videos/lowq/raissa2.webm" type="video/webm" /> -->
+				<source src="./videos/lowq/raissa2.webm" type="video/webm" />
 				<source src="./videos/lowq/raissa2.mp4" type="video/mp4" />
 			</video>
 			<video class='animation-video'  autoplay loop muted playsinline>
@@ -104,19 +108,15 @@
 				<source src="./videos/lowq/moon3.webm" type="video/webm" />
 				<source src="./videos/lowq/moon3.mp4" type="video/mp4" />
 			</video>
-			<video class='animation-video' autoplay loop muted playsinline>
+			<!-- <video class='animation-video' autoplay loop muted playsinline>
 				<source src="./videos/lowq/beets-noodz-logo.webm" type="video/webm" />
 				<source src="./videos/lowq/beets-noodz-logo.mp4" type="video/mp4" />
 			</video>
-			
+			 -->
 			<!-- 
 			<video class='animation-video' autoplay loop muted playsinline>
 				<source src="./videos/lowq/sick.webm" type="video/webm" />
 				<source src="./videos/lowq/sick.mp4" type="video/mp4" />
-			</video>
-			<video class='animation-video' autoplay loop muted playsinline>
-				<source src="./videos/lowq/sos.webm" type="video/webm" />
-				<source src="./videos/lowq/sos.mp4" type="video/mp4" />
 			</video>
 			<video class='animation-video' autoplay loop muted playsinline>
 				<source src="./videos/lowq/progress.webm" type="video/webm" />
@@ -142,17 +142,30 @@
 				</a>			
 			</div>
 
+			<br>
+
+			<div class='vimeoWrapper'>
+				<iframe 
+					src="https://www.youtube.com/embed/9X7L3V-HYYA" 
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen>
+				</iframe>
+			</div>
+
 			<div class='wide-img-container'>
 				<!-- <img class='video-thumbnail' src="./images/faces_adriantraviezo_1.jpg"> -->
 				
-				<div class='vimeoWrapper'>
-					<iframe src="https://player.vimeo.com/video/472845657?h=abac38f532&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+				<!-- <div class='vimeoWrapper'>
+					<iframe 
+						src="https://www.youtube.com/embed/9X7L3V-HYYA" 
+						title="YouTube video player" 
 						frameborder="0" 
-						allow="autoplay; fullscreen; picture-in-picture" 
-						allowfullscreen 
-						title="faces">
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+						allowfullscreen>
 					</iframe>
-				</div>
+				</div> -->
 
 				<!-- <div id='faces' class='video-thumbnail' style="padding:65% 0 0 0;position:relative;">
 					<iframe src="https://player.vimeo.com/video/472845657?h=abac38f532&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
@@ -172,13 +185,51 @@
 			</div>
 		</div>
 
-		<div class='section'>
+		<!-- <div class='section'>
             <img class='album-cover' src="./images/graphics/focus_cover.png" alt="">
             <img class='album-cover' src="./images/graphics/cloudboy.png" alt="">
 			<img class='album-cover' src="./images/graphics/pretty-nasty.png" alt="">
             <img class='album-cover' src="./images/graphics/antibitrot-cover.jpeg" alt="">
+		</div> -->
 
-		</div>
+		<!-- <div class='section'>
+			<div class='album-video-wrapper'>
+				<iframe class="album-cover-video"
+					src="https://www.youtube.com/embed/kX9OzYFwXGA" 
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen>
+				</iframe>
+			</div>
+			<div class='album-video-wrapper'>
+				<iframe class="album-cover-video"
+					src="https://www.youtube.com/embed/qEkV9gdhvzY" 
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen>
+				</iframe>
+			</div>
+			<div class='album-video-wrapper'>
+				<iframe class="album-cover-video"
+					src="https://www.youtube.com/embed/Z27vnA0usow" 
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen>
+				</iframe>
+			</div>
+			<div class='album-video-wrapper'>
+				<iframe class="album-cover-video"
+					src="https://www.youtube.com/embed/2JwZrd7bwks" 
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen>
+				</iframe>
+			</div>
+		</div> -->
 		
 			<!-- <div class='section'>
 				<div class='header'>Videos!</div>
